@@ -1,0 +1,173 @@
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+.main {
+     width: 100%;
+     height: 100vh;
+     
+     background-image: url("./imgs_login/background_website.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+}
+.log-in--container {
+     width: 100%;
+     height: 100%;
+     background-color: rgb(41, 40, 40, 0.5);
+     display: flex;
+     justify-content: center;
+}
+@media only screen and (max-width:1800px) {
+     .log-in {
+          width: 40%;
+          height: 100%;
+          background-image: linear-gradient(rgb(225, 30, 141), rgb(73, 73, 236));
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+}
+
+
+.log-in__boder {
+     width: 70%;
+     height: 80%;
+     border: 7px solid black;
+     display: flex;
+     
+     flex-direction: column;
+}
+.log-in__boder__icon {
+     background-image: url("./imgs_login/login_icon.png");
+     background-size: contain;
+     width: 180px;
+     height: 180px;
+     background-repeat: no-repeat;
+     position: relative;
+     transform: translate(0%, -50%);
+     display: flex;
+     justify-content: center;
+}
+.log-in__boder__icon--container {
+     width: 100%;
+     height: 90px;
+     display: flex;
+     justify-content: center;
+}
+
+
+.log-in__boder__name,
+.log-in__boder__pass {
+     width: 100%;
+     height: 10%;
+     display: flex;
+     justify-content: center;
+     margin-top: 40px;
+}
+.log-in__boder__name {
+     margin-top: 60px;
+}
+.log-in__boder__name--input,
+.log-in__boder__pass--input {
+     width: 80%;
+     height: 100%;
+     font-size: 30px;
+     border-radius: 10px;
+     background-color: rgb(213, 209, 209);
+     padding: 0 10px;
+}
+
+.log-in__boder__confirm--container {
+     width: 100%;
+     height: 10%;
+     display: flex;
+     justify-content: center;
+     margin-top: 50px;
+}
+.log-in__boder__confirm--btn {
+     width: 40%;
+     height: 100%;
+     font-size: 22px;
+     background-color: rgb(247, 74, 74);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-weight: 900;
+     border-radius: 10px;
+}
+.log-in__boder__confirm--btn:hover {
+     cursor: pointer;
+     background-color: red;
+}
+@media only screen and (max-width:500px) {
+     .log-in {
+          width: 100%;
+          height: 100%;
+          background-image: linear-gradient(rgb(225, 30, 141), rgb(73, 73, 236));
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+     .log-in__boder__confirm--btn {
+          width: 60%;
+          height: 100%;
+          font-size: 18px;
+          background-color: rgb(247, 74, 74);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: 900;
+          border-radius: 10px;
+     }
+
+     .log-in__boder__icon {
+          background-image: url("./imgs_login/login_icon.png");
+          background-size: contain;
+          width: 120px;
+          height: 120px;
+          background-repeat: no-repeat;
+          position: relative;
+          transform: translate(0%, -50%);
+          display: flex;
+          justify-content: center;
+     }
+
+     .log-in__boder__name--input,
+     .log-in__boder__pass--input {
+          width: 80%;
+          height: 100%;
+          font-size: 20px;
+          border-radius: 10px;
+          background-color: rgb(213, 209, 209);
+          padding: 0 10px;
+     }
+}
+
+.error-pass {
+     width: 100%;
+     height: 100%;
+     background-color: rgb(44, 43, 43, 0.8);
+     position: absolute;
+     display: none;
+     top: 0;
+     justify-content: center;
+     align-items: center;
+}
+.error-pass.active {
+     display: flex;
+}
+.error-pass__inf {
+     width: 80%;
+     height: 30%;
+     background-color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 30px;
+     font-weight: 900;
+     border-radius: 20px;
+     text-align: center;
+}
+

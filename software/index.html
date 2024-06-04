@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>SMART LOCKER</title>
+     <link rel="icon" type="image/x-icon" href="./imgs_login/icon_tittle.png">
+     <link rel="stylesheet" href="./styles_login.css">
+</head>
+
+<body>
+     <div class="main">
+          <div class="log-in--container">
+               <div class="log-in">
+                    <div class="log-in__boder">
+                         <div class="log-in__boder__icon--container">
+                              <div class="log-in__boder__icon"></div>
+                         </div>
+
+                         <div class="log-in__boder__name">
+                              <input type="text" class="log-in__boder__name--input" placeholder="Số điện thoại">
+                         </div>
+
+                         <div class="log-in__boder__pass">
+                              <input type="password" class="log-in__boder__pass--input" placeholder="Mật khẩu">
+                         </div>
+
+                         <div class="log-in__boder__confirm--container">
+                              <div class="log-in__boder__confirm--btn">ĐĂNG NHẬP</div>
+                         </div>
+
+                    </div>
+               </div>
+          </div>
+          <div class="error-pass">
+               <div class="error-pass__inf">
+                    Sai SĐT hoặc mật khẩu
+               </div>
+          </div>
+     </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+<script src="./login.js"></script>
+</html>

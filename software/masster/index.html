@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>SMART LOCKER</title>
+     <link rel="icon" type="image/x-icon" href="./imgs/icon_tittle.png">
+     <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+     <div class="app">
+          <div class="header">SMART LOCKER</div>
+          <div class="content">
+               <div class="content-row">
+                    <div class="content-row__item">
+                         <div class="content-row__item__icon"></div>
+                         <div class="content-row__item__tittle">Tạo tài khoản</div>
+                    </div>
+
+                    <div class="content-row__item">
+                         <div class="content-row__item__icon"></div>
+                         <div class="content-row__item__tittle">Đổi mật khẩu</div>
+                    </div>
+                    
+               </div>
+
+               <div class="content-row">
+                    <div class="content-row__item">
+                         <div class="content-row__item__icon"></div>
+                         <div class="content-row__item__tittle">Xóa tài khoản</div>
+                    </div>
+
+                    <div class="content-row__item">
+                         <div class="content-row__item__icon"></div>
+                         <div class="content-row__item__tittle">Danh sách người dùng</div>
+                    </div>
+                    
+               </div>
+
+               
+          </div>
+
+          <div class="creat-account--container">
+               <div class="creat-account">
+                    <div class="creat-account__header">TẠO TÀI KHOẢN</div>
+
+                    <div class="creat-account__item">
+                         <input type="text" placeholder="Họ và tên" class="creat-account__item--input">
+                    </div>
+
+                    <div class="creat-account__item">
+                         <input type="text" placeholder="Số điện thoại" class="creat-account__item--input">
+                    </div>
+
+                    <div class="creat-account__item">
+                         <input type="password" placeholder="Mật khẩu" class="creat-account__item--input">
+                    </div>
+
+                    <div class="creat-account__confirm--container">
+                         <div class="creat-account__confirm">Xác nhận</div>
+                    </div>
+               </div>
+          </div>
+
+          <div class="change-password--container">
+               <div class="change-password">
+                    <div class="change-password__header">ĐỔI MẬT KHẨU</div>
+
+                    <div class="change-password__item">
+                         <input type="text" placeholder="Số điện thoại" class="change-password__item--input">
+                    </div>
+
+                    <div class="change-password__item">
+                         <input type="text" placeholder="Mật khẩu mới" class="change-password__item--input">
+                    </div>
+
+
+                    <div class="change-password__confirm--container">
+                         <div class="change-password__confirm">Xác nhận</div>
+                    </div>
+               </div>
+          </div>
+
+          <div class="delete-account--container">
+               <div class="delete-account">
+                    <div class="delete-account__header">XOÁ TÀI KHOẢN</div>
+
+                    <div class="delete-account__item">
+                         <input type="text" placeholder="Số điện thoại" class="delete-account__item--input">
+                    </div>
+
+
+                    <div class="delete-account__confirm--container">
+                         <div class="delete-account__confirm">Xác nhận</div>
+                    </div>
+               </div>
+          </div>
+
+          <div class="list-account--container">
+               <div class="list-account">
+                    <div class="list-account__header">DANH SÁCH TÀI KHOẢN</div>
+               </div>
+          </div>
+     </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script> 
+<script src="./main.js"></script>
+</html>
